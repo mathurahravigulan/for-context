@@ -1,33 +1,24 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import  "./header.css";
+import forContext from "../images/for-context-logo.png"
+import polaroid from "../images/Polaroid.png"
+import spotifyPlayer from "../images/spotify-badge.png"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <header className="home">
+  <div className="header-container">
+    <div className="forcontext">
+     <img src = {forContext} />
+     <div className="spotify-button"><a target="blank" href="https://open.spotify.com/show/6llxXRebp8PSg3S99sL98Q?si=i_EgZ0DTQRe8Nr794ahboQ"><img src ={spotifyPlayer} className="spotify"/></a></div>
     </div>
+    <div>
+    <img src = {polaroid}/>
+    </div>
+
+  </div>
+  <div>
+  </div>
   </header>
 )
 
