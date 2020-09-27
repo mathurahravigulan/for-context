@@ -16,5 +16,28 @@
 }
 
 .spotify-button:hover {
+    box-shadow: 3px 5px 15px #5369A4;
+  
+    transform: translateY(-3px) rotateY(10deg);
+}
+
+.spotify-button {
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    max-width: 165px;
+    max-height: 40px;
+}
+
+@media (max-width: 576px) { 
+    .polaroid{
+        display: none; 
+    }
+    .forcontext{
+        width: 100%;
+        padding-right: 100px; 
+        align-items: center;
+    }
+
+.header-container{
     
 }
+}  
