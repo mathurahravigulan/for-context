@@ -29,12 +29,11 @@
 
 @media (max-width: 576px) { 
     .polaroid{
-        display: none; 
+        padding: 10%;
+       
     }
     .forcontext{
-        width: 100%;
-        padding-right: 100px; 
-        align-items: center;
+        display: none; 
     }
 
 .header-container{
